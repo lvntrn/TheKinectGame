@@ -7,10 +7,8 @@ namespace Tetris {
         public Transform[] heartList; // List this the UI Elements to Display
         public int actualLive = 2; // actualLive that is been Displayed
 
-
         void Start() {
             actualLive = heartList.Length;
-
         }
 
         //Reset the List ,set all to Active
@@ -23,16 +21,15 @@ namespace Tetris {
         // set the Live and Deactivate all Objects Above this Count
         public void setLive(int _value) {
             actualLive = _value;
-            if(_value == heartList.Length) {
-                //setActive();
-            }
-			if (actualLive > 0) {
+//            if(_value == heartList.Length) {
+//                //setActive();
+//            }
+			if (actualLive >= 0) {
 				heartList [_value].gameObject.SetActive (false);
 			}
-            else {
-                //Dead
+			if (actualLive == 0) {
+				Time.timeScale = 0.0f;
 				Dying();
-
             }
         }
 
@@ -42,13 +39,8 @@ namespace Tetris {
         }
 
 		void Dying () {
-			Time.timeScale = 0.0f;
-			bool stop = true;
-			if (stop == true) {
-				Application.LoadLevelAdditive (3);
-			}
+			Application.LoadLevelAdditive (2);
 			//Application.LoadLevel ("PauseMenu");
-
 		}
     }
 }

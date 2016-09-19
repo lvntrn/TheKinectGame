@@ -15,7 +15,6 @@ namespace Tetris {
         public int startCountDown = 3;
         public float countDownTime = 2f; // how fast it counts Down
 
-
         void Start() {
             addScore(0);
             winText.text = "";

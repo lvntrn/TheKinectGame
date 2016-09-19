@@ -27,7 +27,6 @@ namespace Tetris {
 
 		void OnTriggerStay(Collider _other) {
 			if (_other.gameObject.tag == "Obstacle") {
-				Debug.Log("hit obstacle1");
 				getHit = true;
 				reduceLive = true;
 			}				
@@ -46,7 +45,6 @@ namespace Tetris {
 				/*Debug.Log("left wall");*/
 
 				leftwall++;
-				Debug.Log (leftwall);
 
 				if (getHit == true) {
 					/*Debug.Log ("no points");*/
@@ -62,14 +60,13 @@ namespace Tetris {
 					reduceLive = false;	
 				}
 				if (leftwall == 9) {
-					Debug.Log ("Spiel gewonnen Hurra!");
 					Win ();
 				}					
 			}
 		}
 
 		void Win() {
-			Application.LoadLevel(4);
+			Application.LoadLevel(3);
 		}
       }				
     }
