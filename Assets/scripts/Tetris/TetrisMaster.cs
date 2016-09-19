@@ -30,7 +30,6 @@ namespace Tetris {
 			} else if(tetrisMaster != this) {
 				Destroy(gameObject);
 			}
-
 			//this.mainCam = Camera.main.transform;
 			//this.cameraShake = mainCam.GetComponent<CameraShake>();
 			this.gameHud = hud.GetComponent<TetrisHud>();
@@ -61,8 +60,6 @@ namespace Tetris {
 			Transform _actualBase = Instantiate(baseList[spawnIndex], spawnPos, Quaternion.Euler(Vector3.zero)) as Transform;
 			actualBase = _actualBase.GetComponent<BaseMover>();
 			actualBase.setSpeed(incomeSpeed);
-
-
 		}
 
 		//Spawn a Obstacle and set Score, set movedelay

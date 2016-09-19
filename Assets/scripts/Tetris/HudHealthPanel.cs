@@ -32,7 +32,6 @@ namespace Tetris {
             else {
                 //Dead
 				Dying();
-				Debug.Log ("Dying");
 
             }
         }
@@ -42,10 +41,14 @@ namespace Tetris {
             return this.actualLive;
         }
 
-		void Dying (){
-			Application.LoadLevel (3);
+		void Dying () {
+			Time.timeScale = 0.0f;
+			bool stop = true;
+			if (stop == true) {
+				Application.LoadLevelAdditive (3);
+			}
 			//Application.LoadLevel ("PauseMenu");
 
-			}
+		}
     }
 }

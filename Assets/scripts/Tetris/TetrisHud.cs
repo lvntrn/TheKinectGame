@@ -48,7 +48,7 @@ namespace Tetris {
         // Add Score
         public void addScore(int _score) {
             score += _score;
-            countText.text = "Score: " + score.ToString();
+            countText.text =  score.ToString();
         }
 
         // Reduce Live by This Value
