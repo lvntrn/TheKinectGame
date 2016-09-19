@@ -66,7 +66,7 @@ namespace Tetris {
 		}
 
 		void Win() {
-			Application.LoadLevel(3);
+			Application.LoadLevelAdditive (3);
 		}
       }				
     }
