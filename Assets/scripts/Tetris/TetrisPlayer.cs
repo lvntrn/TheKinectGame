@@ -5,6 +5,8 @@ namespace Tetris {
 	
     public class TetrisPlayer : MonoBehaviour {
 
+		public int winPause = 0;
+
 		private Rigidbody rb;
 		public float speed;
 
@@ -20,8 +22,7 @@ namespace Tetris {
 
 		void FixedUpdate () {
 			float moveHorizontal = Input.GetAxis ("Horizontal");
-			float moveVertical = Input.GetAxis ("Vertical");
-			Vector3 movement = new Vector3 (moveHorizontal, 0.0f, moveVertical);
+			Vector3 movement = new Vector3 (moveHorizontal, 0.0f, 0.0f);
 			rb.AddForce (movement * speed);
 		}
 
@@ -45,6 +46,7 @@ namespace Tetris {
 				/*Debug.Log("left wall");*/
 
 				leftwall++;
+				Debug.Log (winPause);
 
 				if (getHit == true) {
 					/*Debug.Log ("no points");*/
@@ -54,20 +56,22 @@ namespace Tetris {
 					/*Debug.Log ("plus 10punkte");*/
 					TetrisMaster.AddScore(10);
 				}
-				if (reduceLive == true) {
+				if (reduceLive == true && winPause == 0) {
 					/*Debug.Log ("reduce live");*/
 					TetrisMaster.reduceLive(1);
 					reduceLive = false;	
 				}
-				if (leftwall == 9) {
+				if (leftwall == 3) {
 					Win ();
 				}					
 			}
 		}
 
 		void Win() {
+			winPause++;
 			Application.LoadLevelAdditive (3);
 		}
+
       }				
     }
 

@@ -4,12 +4,20 @@ using System.Collections;
 namespace Tetris {
     public class HudHealthPanel : MonoBehaviour {
 
+		private static int pause;
+
         public Transform[] heartList; // List this the UI Elements to Display
         public int actualLive = 2; // actualLive that is been Displayed
 
         void Start() {
             actualLive = heartList.Length;
         }
+
+		void Update() {
+			GameObject thePlayer = GameObject.Find ("FakePlayer");
+			TetrisPlayer tetrisPlayer = thePlayer.GetComponent<TetrisPlayer>();
+			pause = tetrisPlayer.winPause;
+		}
 
         //Reset the List ,set all to Active
 //        public void setActive() {
@@ -21,6 +29,7 @@ namespace Tetris {
         // set the Live and Deactivate all Objects Above this Count
         public void setLive(int _value) {
             actualLive = _value;
+			Debug.Log ("DKK: " + pause);
 //            if(_value == heartList.Length) {
 //                //setActive();
 //            }
@@ -28,8 +37,9 @@ namespace Tetris {
 				heartList [_value].gameObject.SetActive (false);
 			}
 			if (actualLive == 0) {
-				Time.timeScale = 0.0f;
-				Dying();
+				if (pause == 0) { 
+					Dying ();
+				}
             }
         }
 
