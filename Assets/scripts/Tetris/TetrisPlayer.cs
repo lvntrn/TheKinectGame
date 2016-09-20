@@ -16,8 +16,16 @@ namespace Tetris {
 		public int leftwall = 0;
 		//public int wallsTillWin = 7;
 
+		public AudioSource source;
+		public AudioClip clip;
+
+
+
 		void Start () {
 			rb = GetComponent<Rigidbody> ();
+
+			source = GetComponent<AudioSource> ();
+	
 		}
 
 		void FixedUpdate () {
@@ -55,11 +63,13 @@ namespace Tetris {
 				} else {
 					/*Debug.Log ("plus 10punkte");*/
 					TetrisMaster.AddScore(10);
+					source.Play ();
 				}
 				if (reduceLive == true && winPause == 0) {
 					/*Debug.Log ("reduce live");*/
 					TetrisMaster.reduceLive(1);
 					reduceLive = false;	
+
 				}
 				if (leftwall == 9) {
 					Win ();
@@ -70,6 +80,7 @@ namespace Tetris {
 		void Win() {
 			winPause++;
 			Application.LoadLevelAdditive (3);
+			source.Pause ();
 		}
 
       }				

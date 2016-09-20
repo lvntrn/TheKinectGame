@@ -51,6 +51,7 @@ namespace Tetris {
 		void Dying () {
 			Application.LoadLevelAdditive (2);
 			//Application.LoadLevel ("PauseMenu");
+			//Musik Pausiert
 		}
     }
 }

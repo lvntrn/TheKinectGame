@@ -14,6 +14,7 @@ ModelImporter:
     100012: Sweep
     100014: Sweep_Control
     100016: Zylinder
+    100018: BooleBackup_1
     400000: Base6
     400002: //RootNode
     400004: BaseMain
@@ -23,18 +24,22 @@ ModelImporter:
     400012: Sweep
     400014: Sweep_Control
     400016: Zylinder
+    400018: BooleBackup_1
     2300000: Base6
     2300002: BaseMain
     2300004: Sweep
     2300006: Zylinder
+    2300008: BooleBackup_1
     3300000: Base6
     3300002: BaseMain
     3300004: Sweep
     3300006: Zylinder
+    3300008: BooleBackup_1
     4300000: BaseMain
     4300002: Zylinder
     4300004: Base6
     4300006: Sweep
+    4300008: BooleBackup_1
     9500000: //RootNode
   materials:
     importMaterials: 1
