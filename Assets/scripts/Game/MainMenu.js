@@ -1,9 +1,9 @@
-﻿function PlayGame()
+﻿function PlayTetris()
 {
- Application.LoadLevel(1);
+    Application.LoadLevel(1);
 }
 
-function PlayShooter()
+function PlayMaze()
 {
  Application.LoadLevel(2);
 }
@@ -17,4 +17,3 @@ function ExitGame()
 {
  Application.Quit();
 }
-
