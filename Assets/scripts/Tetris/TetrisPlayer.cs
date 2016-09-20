@@ -61,7 +61,7 @@ namespace Tetris {
 					TetrisMaster.reduceLive(1);
 					reduceLive = false;	
 				}
-				if (leftwall == 3) {
+				if (leftwall == 9) {
 					Win ();
 				}					
 			}
