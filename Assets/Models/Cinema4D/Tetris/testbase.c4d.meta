@@ -1,58 +1,10 @@
 fileFormatVersion: 2
-guid: 47a4b6d77f29eea43a55356d54ff1964
-timeCreated: 1452251260
+guid: eb5ad85075d7ba642a051f8cb9e3ee8c
+timeCreated: 1474383200
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
-  fileIDToRecycleName:
-    100000: //RootNode
-    100002: Base1
-    100004: Base_1
-    100006: CINEMA_4D_Editor
-    100008: EdgeSweep
-    100010: Sweep
-    100012: Sweep_Control
-    100014: _A1
-    100016: Base
-    100018: BooleBackup
-    100020: Base1_2
-    100022: Base1_instance
-    100024: Boole_1
-    400000: //RootNode
-    400002: Base1
-    400004: Base_1
-    400006: CINEMA_4D_Editor
-    400008: EdgeSweep
-    400010: Sweep
-    400012: Sweep_Control
-    400014: _A1
-    400016: Base
-    400018: BooleBackup
-    400020: Base1_2
-    400022: Base1_instance
-    400024: Boole_1
-    2300000: Base_1
-    2300002: Sweep
-    2300004: _A1
-    2300006: Base
-    2300008: Base1
-    2300010: Base1_2
-    2300012: Boole_1
-    3300000: Base_1
-    3300002: Sweep
-    3300004: _A1
-    3300006: Base
-    3300008: Base1
-    3300010: Base1_2
-    3300012: Boole_1
-    4300000: Sweep
-    4300002: Base_1
-    4300004: Base
-    4300006: _A1
-    4300008: Base1
-    4300010: Base1_2
-    4300012: Boole_1
-    9500000: //RootNode
+  fileIDToRecycleName: {}
   materials:
     importMaterials: 1
     materialName: 0
@@ -80,7 +32,7 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
-    importBlendShapes: 0
+    importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
@@ -95,7 +47,7 @@ ModelImporter:
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
-    tangentImportMode: 4
+    tangentImportMode: 3
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
