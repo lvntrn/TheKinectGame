@@ -71,7 +71,7 @@ namespace Tetris {
 					reduceLive = false;	
 
 				}
-				if (leftwall == 9) {
+				if (leftwall == 12) {
 					Win ();
 				}					
 			}
