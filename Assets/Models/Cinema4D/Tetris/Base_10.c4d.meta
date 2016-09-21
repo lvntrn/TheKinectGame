@@ -8,12 +8,26 @@ ModelImporter:
     100000: //RootNode
     100002: CINEMA_4D_Editor
     100004: "W\xFCrfel_1"
+    100006: Base10
+    100008: EdgeSweep
+    100010: Sweep
+    100012: Sweep_Control
     400000: //RootNode
     400002: CINEMA_4D_Editor
     400004: "W\xFCrfel_1"
+    400006: Base10
+    400008: EdgeSweep
+    400010: Sweep
+    400012: Sweep_Control
     2300000: "W\xFCrfel_1"
+    2300002: Base10
+    2300004: Sweep
     3300000: "W\xFCrfel_1"
+    3300002: Base10
+    3300004: Sweep
     4300000: "W\xFCrfel_1"
+    4300002: Base10
+    4300004: Sweep
     9500000: //RootNode
   materials:
     importMaterials: 1
