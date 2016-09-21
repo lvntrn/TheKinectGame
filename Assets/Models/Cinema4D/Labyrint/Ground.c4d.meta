@@ -8,15 +8,26 @@ ModelImporter:
     100000: Boden
     100002: //RootNode
     100004: Teiler
+    100006: CINEMA_4D_Editor
+    100008: EdgeSweep
+    100010: Sweep
+    100012: Sweep_Control
     400000: Boden
     400002: //RootNode
     400004: Teiler
+    400006: CINEMA_4D_Editor
+    400008: EdgeSweep
+    400010: Sweep
+    400012: Sweep_Control
     2300000: Boden
     2300002: Teiler
+    2300004: Sweep
     3300000: Boden
     3300002: Teiler
+    3300004: Sweep
     4300000: Boden
     4300002: Teiler
+    4300004: Sweep
     9500000: //RootNode
   materials:
     importMaterials: 1
